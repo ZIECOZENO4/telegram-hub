@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Image from "next/image"
-
+import {ModeToggle} from '../../components/darkmood'
 import { Button } from "../ui/button"
 import {
   Card,
@@ -63,6 +63,7 @@ export default function DashboardPage() {
             <div className="flex items-center space-x-2">
               <CalendarDateRangePicker />
               <Button>Download</Button>
+              <ModeToggle />
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
