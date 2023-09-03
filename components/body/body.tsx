@@ -17,7 +17,7 @@ import {
 } from "../ui/tabs"
 import { CalendarDateRangePicker } from "../date-range-picker"
 import { MainNav } from "../shand/main-nav"
-
+import { Overview } from "../../components/overview"
 import { RecentSales } from "../shand/recent-sales"
 import { Search } from "../shand/search"
 
@@ -72,7 +72,10 @@ export default function DashboardPage() {
                 Analytics
               </TabsTrigger>
               <TabsTrigger value="reports" disabled>
-                Reports
+                Referrals
+              </TabsTrigger>
+              <TabsTrigger value="analytics" disabled>
+               Deposits
               </TabsTrigger>
               <TabsTrigger value="notifications" disabled>
                 Notifications
@@ -188,7 +191,7 @@ export default function DashboardPage() {
                     <CardTitle>Overview</CardTitle>
                   </CardHeader>
                   <CardContent className="pl-2">
-    
+                    <Overview />
                   </CardContent>
                 </Card>
                 <Card className="col-span-3">
